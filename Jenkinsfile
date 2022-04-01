@@ -3,9 +3,9 @@ pipeline {
      label 'server1'
    }
   stages {
-     stage('clone') {
+     stage('download') {
            steps {
-                sh 'git clone https://github.com/roboshop-devops-project/frontend/archive/main.zip'
+                sh 'wget https://github.com/roboshop-devops-project/frontend/archive/main.zip'
             }
         }
 
