@@ -8,7 +8,7 @@ pipeline {
                 sh "ls"
             }
         }
-  stages {
+
        stage('download') {
              steps {
                   sh 'wget -O /tmp/app/app.zip https://github.com/roboshop-devops-project/frontend/archive/main.zip'
