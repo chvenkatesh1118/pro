@@ -16,7 +16,7 @@ pipeline {
                   sh 'wget -O /tmp/app/app.1.zip https://github.com/roboshop-devops-project/frontend/archive/main.zip'
               }
           }
-       stage('clean') {
+       stage('change') {
                   steps {
                        sh "cd /tmp/app"
                    }
