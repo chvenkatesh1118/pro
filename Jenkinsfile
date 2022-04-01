@@ -4,11 +4,11 @@ pipeline {
    }
   stages {
         stage('clean') {
-                          steps {
-                               sh "rm -rf /tmp/app"
-                               sh "mkdir /tmp/app"
-                           }
-                       }
+             steps {
+                sh "rm -rf /tmp/app"
+                sh "mkdir /tmp/app"
+              }
+           }
 
 
        stage('download') {
