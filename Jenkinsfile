@@ -1,5 +1,5 @@
 pipeline {
-    agent server1
+    agent 'server1'
 
   stages {
      stage('clone') {
