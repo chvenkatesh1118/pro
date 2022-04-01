@@ -3,7 +3,7 @@ pipeline {
      label 'server1'
    }
   stages {
-     stage('download') {
+     stage('clean') {
            steps {
                 sh "ls"
             }
